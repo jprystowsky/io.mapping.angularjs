@@ -79,7 +79,8 @@ $scope.myList = [
 ];
 ````
 
-will yield `One, Two, Three, Four, and Five.`
+will yield `One, Two, Three, Four, and Five.` (You could go deeper and have
+objects that return arrays of functions, etc., but you get the point.)
 
 Usage
 -----
