@@ -1,0 +1,14 @@
+{
+	"name": "io.mapping.angularjs",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"express": "latest"
+	},
+	"devDependencies": {
+		"grunt": "latest",
+		"grunt-contrib-clean": "latest",
+		"grunt-contrib-uglify": "latest",
+		"grunt-mkdir": "latest"
+	}
+}
