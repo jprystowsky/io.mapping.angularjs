@@ -15,7 +15,7 @@ Like a good boy, I also intend on adding unit testing, etc., which I naughtily h
 
 #### enumeratedList
 
-Given a variable `myList,` enumeratedList will iterate through the elements and concatenate their values. It correctly
+enumeratedList will iterate through the elements of a supplied list `list` and concatenate their values. It correctly
 handles various array sizes to generate sensible output ("A," "A and B," "A, B, and C," etc.) and is intelligent enough
 to handle non-primitive types and undefined values. Specifically:
 
