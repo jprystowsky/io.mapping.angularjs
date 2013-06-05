@@ -8,7 +8,6 @@
 	"devDependencies": {
 		"grunt": "latest",
 		"grunt-contrib-clean": "latest",
-		"grunt-contrib-copy": "latest",
 		"grunt-contrib-uglify": "latest",
 		"grunt-mkdir": "latest"
 	}

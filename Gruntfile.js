@@ -15,14 +15,6 @@ module.exports = function (grunt) {
 			}
 		},
 
-		copy: {
-			src: {
-				files: [
-					{src: ['./src/*'], dest: 'build/'},
-				]
-			}
-		},
-
 		uglify: {
 			options: {
 				sequences: true,
@@ -46,7 +38,7 @@ module.exports = function (grunt) {
 			},
 			build: {
 				files: {
-					'build/io.mapping.angularjs.min.js': ['build/**/*.js']
+					'build/io.mapping.angularjs.min.js': ['src/**/*.js']
 				}
 			}
 		}
@@ -61,7 +53,6 @@ module.exports = function (grunt) {
 	grunt.registerTask('default', [
 		'clean:build',
 		'mkdir:build',
-		'copy:src',
 		'uglify:build'
 	]);
 };
