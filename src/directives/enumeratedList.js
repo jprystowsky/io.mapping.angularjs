@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('io.mapping.angularjs.directives', [])
+angular.module('io.mapping.angularjs.directives.enumeratedList', [])
 	.directive('enumeratedList', function () {
 		return {
 			replace: true,

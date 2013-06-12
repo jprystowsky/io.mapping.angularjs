@@ -40,6 +40,52 @@ Like a good boy, I also intend on adding unit testing, etc., which I naughtily h
 
 ### Directives
 
+#### chartjs
+
+chartjs is a simple AngularJS wrapper around the excellent [Chart.js](http://www.chartjs.org/) project. It lets you bind
+Chart.js to `canvas` elements in the Angular way, and adds in some Angular niceties (e.g., watchers on `chart-data`
+so that changes to the chart data source will trigger a new chart being drawn).
+
+##### Required attributes
+
+* `chartjs:` The type of chart you want (e.g., 'Bar,' 'Line,' etc.)
+* `chart-context:` A string, like, '2d'
+* `chart-data:` A data object for Chart.js (yes, the chart updates when `chart-data` does!)
+
+##### Optional attributes
+
+* `chart-options:` An options object for Chart.js
+
+##### Sample usage
+
+````
+<canvas width="400", height="400", chartjs='Bar', chart-context='2d', chart-data='chartData'></canvas>
+````
+
+(elsewhere)
+
+````
+$scope.chartData = {
+			labels : ["January","February","March","April","May","June","July"],
+			datasets : [
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					data : [65,59,90,81,56,55,40]
+				},
+				{
+					fillColor : "rgba(151,187,205,0.5)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#fff",
+					data : [28,48,40,19,96,27,100]
+				}
+			]
+		};
+````
+
 #### enumeratedList
 
 enumeratedList will iterate through the elements of a supplied list `list` and concatenate their values. It correctly
@@ -52,11 +98,11 @@ to handle non-primitive types and undefined values. Specifically:
 * Objects are evaluated given a `property` attribute
 * Functions are called
 
-##### Required attributes:
+##### Required attributes
 
 * `list:` An array of values
 
-##### Optional attributes:
+##### Optional attributes
 
 * `separator:` A string like "," as in: "Moe, ..." (defaults to ',')
 * `final-separator:` A string like "and" as in "Moe, Larry, and Curly" (defaults to 'and')
