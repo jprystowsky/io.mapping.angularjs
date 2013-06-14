@@ -59,7 +59,7 @@ so that changes to the chart data source will trigger a new chart being drawn).
 ##### Sample usage
 
 ````
-<canvas width="400", height="400", chartjs='Bar', chart-context='2d', chart-data='chartData'></canvas>
+<canvas width="400" height="400" chartjs='Bar' chart-context='2d' chart-data='chartData'></canvas>
 ````
 
 (elsewhere)
