@@ -49,13 +49,13 @@ so that changes to the chart data source will trigger a new chart being drawn).
 ##### Required attributes
 
 * `chartjs:` The type of chart you want (e.g., 'Bar,' 'Line,' etc.)
-* `chart-context:` A string, like, '2d'
-* `chart-data:` A data object for Chart.js (yes, the chart updates when `chart-data` does!)
+* `chartContext:` A string, like, '2d'
+* `chartData:` A data object for Chart.js (yes, the chart updates when `chartData` does!)
 
 ##### Optional attributes
 
-* `chart-debug:` A flag indicating that debugging messages should be emitted
-* `chart-options:` An options object for Chart.js
+* `chartDebug:` A flag indicating that debugging messages should be emitted
+* `chartOptions:` An options object for Chart.js
 
 ##### Sample usage
 
@@ -106,7 +106,7 @@ to handle non-primitive types and undefined values. Specifically:
 ##### Optional attributes
 
 * `separator:` A string like "," as in: "Moe, ..." (defaults to ',')
-* `final-separator:` A string like "and" as in "Moe, Larry, and Curly" (defaults to 'and')
+* `finalSeparator:` A string like "and" as in "Moe, Larry, and Curly" (defaults to 'and')
 * `property:` The property to look for when examining objects
 
 ##### Sample usage
