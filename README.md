@@ -54,6 +54,7 @@ so that changes to the chart data source will trigger a new chart being drawn).
 
 ##### Optional attributes
 
+* `chart-debug:` A flag indicating that debugging messages should be emitted
 * `chart-options:` An options object for Chart.js
 
 ##### Sample usage
